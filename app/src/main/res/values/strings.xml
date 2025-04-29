@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Braining_Test</string>
+    <string-array name="difficulty_items">
+        <item>Easy (5s)</item>
+        <item>Moderate (3s)</item>
+        <item>Hard (1s)</item>
+    </string-array>
+    <string-array name="module_items">
+        <item>Rechnen</item>
+        <item>Farben</item>
+        <item>Sprachen</item>
+        <item>Formen</item>
+    </string-array>
+    <string name="sqr_root">&#8730;</string>
+</resources>

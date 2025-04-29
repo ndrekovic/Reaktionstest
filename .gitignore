@@ -1,0 +1,17 @@
+# IDE
+.idea/
+*.iml
+
+# Build
+/build/
+out/
+.gradle/
+
+# Gradle wrapper cache
+!gradle/wrapper/gradle-wrapper.jar
+
+# OS files
+.DS_Store
+
+# Logs
+*.log

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/limegreen"
+    android:resizeableActivity="false"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startBtn"
+        android:layout_width="210dp"
+        android:layout_height="101dp"
+        android:onClick="goToModuleMenu"
+        android:text="START"
+        android:textSize="30dp"
+        android:textColor="@color/Weiß"
+        app:backgroundTint="#DF5353"
+        app:cornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="84dp">
+
+    <Button
+        android:id="@+id/moderate"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="142dp"
+        android:layout_height="228dp"
+        android:onClick="terminateDfficulty"
+        android:text="Moderate \n(1.5s)"
+        app:backgroundTint="#64B7E1"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+    <Button
+        android:id="@+id/easy"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="135dp"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_height="227dp"
+        android:onClick="terminateDfficulty"
+        android:text="Easy\n(2s)"
+        app:backgroundTint="#64B7E1"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <Button
+        android:id="@+id/hard"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="135dp"
+        android:layout_height="227dp"
+        android:onClick="terminateDfficulty"
+        android:text="Hard \n(1s)"
+        app:backgroundTint="#64B7E1"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="Braining"
+        android:textColor="#000000"
+        android:textSize="45dp"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="italic"
+        />
+
+    <ImageView
+        android:id="@+id/brainIcon"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054"
+        app:srcCompat="@drawable/app_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

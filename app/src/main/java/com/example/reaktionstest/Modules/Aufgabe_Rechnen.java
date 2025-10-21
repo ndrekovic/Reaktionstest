@@ -1,4 +1,4 @@
-package com.example.konzentrationstest.Modules;
+package com.example.reaktionstest.Modules;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -16,11 +16,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.konzentrationstest.MainActivity;
-import com.example.konzentrationstest.PopUpFenster;
-import com.example.konzentrationstest.R;
-import com.example.konzentrationstest.TopScore;
-import com.example.konzentrationstest.Zeit;
+import com.example.reaktionstest.MainActivity;
+import com.example.reaktionstest.PopUpFenster;
+import com.example.reaktionstest.R;
+import com.example.reaktionstest.TopScore;
+import com.example.reaktionstest.Zeit;
 
 import java.util.Arrays;
 

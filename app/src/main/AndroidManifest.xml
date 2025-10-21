@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.konzentrationstest"
+    package="com.example.reaktionstest"
     >
 
     <application
@@ -9,14 +9,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/gehirn2"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Konzentrationstest">
-        <activity android:name=".Modules.Aufgabe_waehleUnpassendeFarbe"></activity>
-        <activity android:name=".Modules.Aufgabe_Formen" />
-        <activity android:name=".Modules.Aufgabe_Farben" />
-        <activity android:name=".Modules.Aufgabe_Rechnen" />
-        <activity android:name=".ModuleMenu" />
-        <activity android:name=".PopUpFenster"/>
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.Reaktionstest">
+        <activity android:name="com.example.reaktionstest.Modules.Aufgabe_waehleUnpassendeFarbe"></activity>
+        <activity android:name="com.example.reaktionstest.Modules.Aufgabe_Formen" />
+        <activity android:name="com.example.reaktionstest.Modules.Aufgabe_Farben" />
+        <activity android:name="com.example.reaktionstest.Modules.Aufgabe_Rechnen" />
+        <activity android:name="com.example.reaktionstest.ModuleMenu" />
+        <activity android:name="com.example.reaktionstest.PopUpFenster"/>
+        <activity android:name="com.example.reaktionstest.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

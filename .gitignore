@@ -1,17 +1,72 @@
-# IDE
+# ----------------------------------------
+# 🧠 IDE & Editor files
+# ----------------------------------------
 .idea/
+.vscode/
 *.iml
 
-# Build
-/build/
-out/
-.gradle/
+# Eclipse (nur falls du mal wechselst)
+.project
+.classpath
+.settings/
 
-# Gradle wrapper cache
+# ----------------------------------------
+# ⚙️ Gradle build system
+# ----------------------------------------
+.gradle/
+build/
+out/
+# Falls du ein multi-module Projekt hast:
+*/build/
+
+# Gradle wrapper cache – behalten!
 !gradle/wrapper/gradle-wrapper.jar
 
-# OS files
-.DS_Store
+# ----------------------------------------
+# 🧩 Java / Kotlin / Android artifacts
+# ----------------------------------------
+*.class
+*.apk
+*.ap_
+*.dex
+*.jar
+*.war
+*.ear
 
-# Logs
+# ----------------------------------------
+# 🧪 Test & coverage outputs
+# ----------------------------------------
+test-output/
+coverage/
+*.exec
+*.ec
+
+# ----------------------------------------
+# 🗂️ Betriebssystem & temporäre Dateien
+# ----------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+
+# ----------------------------------------
+# 🧾 Logs
+# ----------------------------------------
 *.log
+
+# ----------------------------------------
+# 🚀 Optional: JetBrains local history (falls aktiviert)
+# ----------------------------------------
+.idea/**/shelf/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/libraries
+.idea/**/caches/
+.idea/**/modules.xml
+.idea/**/gradle.xml
+.idea/**/jarRepositories.xml

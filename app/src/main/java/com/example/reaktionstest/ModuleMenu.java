@@ -1,4 +1,4 @@
-package com.example.konzentrationstest;
+package com.example.reaktionstest;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +10,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.konzentrationstest.Modules.Aufgabe_Farben;
-import com.example.konzentrationstest.Modules.Aufgabe_Formen;
-import com.example.konzentrationstest.Modules.Aufgabe_Rechnen;
-import com.example.konzentrationstest.Modules.Aufgabe_waehleUnpassendeFarbe;
+import com.example.reaktionstest.Modules.Aufgabe_Farben;
+import com.example.reaktionstest.Modules.Aufgabe_Formen;
+import com.example.reaktionstest.Modules.Aufgabe_Rechnen;
+import com.example.reaktionstest.Modules.Aufgabe_waehleUnpassendeFarbe;
 
 
 // Settings for playing the game
@@ -26,10 +26,10 @@ public class ModuleMenu extends AppCompatActivity implements AdapterView.OnItemS
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modulemenu);
 
-        Button b1 = findViewById(R.id.button_rechnen);
-        Button b2 = findViewById(R.id.button_farbe);
-        Button b3 = findViewById(R.id.button_formen);
-        Button b4 = findViewById(R.id.button_waehleUnpassendeFarbe);
+        Button b1 = findViewById(R.id.button_arithmetic);
+        Button b2 = findViewById(R.id.button_colorwords);
+        Button b3 = findViewById(R.id.button_shapes);
+        Button b4 = findViewById(R.id.button_inappropriate_color);
 
         b1.setBackgroundColor(getResources().getColor(R.color.limegreen));
         b2.setBackgroundColor(getResources().getColor(R.color.lightgreen));
@@ -67,13 +67,13 @@ public class ModuleMenu extends AppCompatActivity implements AdapterView.OnItemS
             Class nextModule = null;
             int chosenModule = view.getId();
 
-            if (chosenModule == R.id.button_rechnen) {
+            if (chosenModule == R.id.button_arithmetic) {
                 nextModule = Aufgabe_Rechnen.class;
-            } else if (chosenModule == R.id.button_farbe) {
+            } else if (chosenModule == R.id.button_colorwords) {
                 nextModule = Aufgabe_Farben.class;
-            } else if (chosenModule == R.id.button_formen) {
+            } else if (chosenModule == R.id.button_shapes) {
                 nextModule = Aufgabe_Formen.class;
-            } else if (chosenModule == R.id.button_waehleUnpassendeFarbe) {
+            } else if (chosenModule == R.id.button_inappropriate_color) {
                 nextModule = Aufgabe_waehleUnpassendeFarbe.class;
             }
 

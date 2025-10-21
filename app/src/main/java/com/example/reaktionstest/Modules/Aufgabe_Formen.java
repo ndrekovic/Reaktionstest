@@ -1,5 +1,5 @@
 
-package com.example.konzentrationstest.Modules;
+package com.example.reaktionstest.Modules;
 
 
 import android.app.Dialog;
@@ -18,11 +18,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.konzentrationstest.MainActivity;
-import com.example.konzentrationstest.PopUpFenster;
-import com.example.konzentrationstest.R;
-import com.example.konzentrationstest.TopScore;
-import com.example.konzentrationstest.Zeit;
+import com.example.reaktionstest.MainActivity;
+import com.example.reaktionstest.PopUpFenster;
+import com.example.reaktionstest.R;
+import com.example.reaktionstest.TopScore;
+import com.example.reaktionstest.Zeit;
 
 import java.util.Arrays;
 
@@ -34,13 +34,9 @@ import java.util.Arrays;
 public class Aufgabe_Formen extends AppCompatActivity {
 
     // wichtig: formenText und symbolDateien muessen 1:1 in der gleichen Reihenfolge sein
-<<<<<<< HEAD
-//    private final String [] formenText = {"Kreis", "Quadrat", "Stern", "Herz", "Dreieck"};
-    private final String [] formenText = {"Circle", "Rectangle", "Star", "Heart", "Triangle"};
+    private final String [] formenText = {"Kreis", "Quadrat", "Stern", "Herz", "Dreieck"};
+    // private final String [] formenText = {"Circle", "Rectangle", "Star", "Heart", "Triangle"};
 
-=======
-    private final String [] formenText = {"Circle", "Rectangle", "Star", "Heart", "Triangle"};
->>>>>>> App hochgeladen, fertig.
     private final int []symbolDateien = {R.drawable.kreis, R.drawable.quadrat, R.drawable.stern, R.drawable.herz, R.drawable.dreieck};
 
     private ImageView form;
@@ -103,8 +99,12 @@ public class Aufgabe_Formen extends AppCompatActivity {
         symbol = symbolDateien[randomSymbol];
 
         // Erstellen des Starttextes und der Startform
-        textView.setText(formenText[(int) (Math.random() * formenText.length)]);
+        System.out.println("Textview get text: -------" +  textView.getText());
         form.setImageResource(symbolDateien[randomSymbol]);
+        form.setScaleX(1.5f); // 150% Breite
+        form.setScaleY(1.5f); // 150% Höhe
+
+        textView.setText(formenText[(int) (Math.random() * formenText.length)]);
         punkte = 0;       // sehr wichtig, da man ins Menue zurueckgehen und das Spiel wieder oeffnen kann
 
         pop = new PopUpFenster(this, punkte, preferences.getInt(KEY, 0), neuerHighScore, epicDialog, preferences, preferencesEditor, KEY);
@@ -187,7 +187,7 @@ public class Aufgabe_Formen extends AppCompatActivity {
                 symbol = symbolDateien[temp];
             } while (formenText[randomSymbol].equals(lastText) || (lastSymbol == symbol));
 
-<<<<<<< HEAD
+            /*
             // fuer Position des Textes im Symbol
             textView.setX(295.0f);
             if (symbol == R.drawable.kreis) {
@@ -199,11 +199,9 @@ public class Aufgabe_Formen extends AppCompatActivity {
             } else if (symbol == R.drawable.herz) {
                 textView.setY(708.0f);
             } else {    // if symbol == R.drawable.dreieck
-                textView.setY(850.0f);
-            }
+                textView.setY(708.0f);
+            }*/
 
-=======
->>>>>>> App hochgeladen, fertig.
             // Setzen des neuen Textes und der neuen Form
             textView.setText(formenText[randomSymbol]);
             form.setImageResource(symbol);

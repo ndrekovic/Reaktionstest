@@ -1,4 +1,4 @@
-package com.example.konzentrationstest;
+package com.example.reaktionstest;
 
 import android.os.CountDownTimer;
 import android.util.Log;
@@ -7,10 +7,10 @@ import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.konzentrationstest.Modules.Aufgabe_Farben;
-import com.example.konzentrationstest.Modules.Aufgabe_Formen;
-import com.example.konzentrationstest.Modules.Aufgabe_Rechnen;
-import com.example.konzentrationstest.Modules.Aufgabe_waehleUnpassendeFarbe;
+import com.example.reaktionstest.Modules.Aufgabe_Farben;
+import com.example.reaktionstest.Modules.Aufgabe_Formen;
+import com.example.reaktionstest.Modules.Aufgabe_Rechnen;
+import com.example.reaktionstest.Modules.Aufgabe_waehleUnpassendeFarbe;
 
 public class Zeit extends AppCompatActivity {
 

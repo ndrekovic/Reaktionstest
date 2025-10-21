@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.braining.konzentrationstest"
+        applicationId "com.braining.reaktionstest"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 2

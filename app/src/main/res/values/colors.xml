@@ -41,9 +41,6 @@
     <color name="Black">#000000</color>
     <color name="White">#FFFFFFFF</color>
 
-<<<<<<< HEAD
-=======
-
 >>>>>>> App hochgeladen, fertig.
     <string-array name="colors">
         <item>@color/yellowgreen</item>

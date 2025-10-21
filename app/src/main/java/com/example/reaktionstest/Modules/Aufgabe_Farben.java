@@ -1,4 +1,4 @@
-package com.example.konzentrationstest.Modules;
+package com.example.reaktionstest.Modules;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -16,11 +16,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.konzentrationstest.MainActivity;
-import com.example.konzentrationstest.PopUpFenster;
-import com.example.konzentrationstest.R;
-import com.example.konzentrationstest.TopScore;
-import com.example.konzentrationstest.Zeit;
+import com.example.reaktionstest.MainActivity;
+import com.example.reaktionstest.PopUpFenster;
+import com.example.reaktionstest.R;
+import com.example.reaktionstest.TopScore;
+import com.example.reaktionstest.Zeit;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
@@ -29,13 +29,9 @@ public class Aufgabe_Farben extends AppCompatActivity {
 
     private TextView farbText;
 
-    //private final String [] farben = {"Grün", "Gelb", "Blau", "Rot", "Orange", "Weiß", "Pink", "Schwarz"};
-<<<<<<< HEAD
-    private final String[] farben = {"Green", "Yellow", "Blue", "Red", "Orange", "White", "Pink", "Black"};
-=======
+    private final String [] farben = {"Grün", "Gelb", "Blau", "Rot", "Orange", "Weiß", "Pink", "Schwarz"};
+    //private final String[] farben = {"Green", "Yellow", "Blue", "Red", "Orange", "White", "Pink", "Black"};
 
-    private String[] farben = {"Green", "Yellow", "Blue", "Red", "Orange", "White", "Pink", "Black"};
->>>>>>> App hochgeladen, fertig.
     private final int [] farbCodes = new int[farben.length];
 
     private SharedPreferences preferences;
@@ -85,7 +81,7 @@ public class Aufgabe_Farben extends AppCompatActivity {
 
         // durchsucht alle Farben in colors.xml (und weitere) und filtert alle Farben heraus, die im Array "farben" enthalten sind
         try {
-            Field[] fields = Class.forName("com.example.konzentrationstest" + ".R$color").getDeclaredFields();
+            Field[] fields = Class.forName("com.example.reaktionstest" + ".R$color").getDeclaredFields();
             String colorName;
             for (Field farbe: fields) {
                 colorName = farbe.getName();

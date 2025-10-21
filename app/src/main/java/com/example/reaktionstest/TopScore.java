@@ -1,4 +1,4 @@
-package com.example.konzentrationstest;
+package com.example.reaktionstest;
 
 public class TopScore {
     public static int highscore_rechnen = 0;

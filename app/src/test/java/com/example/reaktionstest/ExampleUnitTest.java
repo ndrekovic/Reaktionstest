@@ -1,4 +1,4 @@
-package com.example.konzentrationstest;
+package com.example.reaktionstest;
 
 import org.junit.Test;
 

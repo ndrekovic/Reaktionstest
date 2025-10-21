@@ -1,4 +1,4 @@
-# Konzentrationstest
+# Reaktionstest
 
 Bei diesem Projekt handelt es sich um eine mobile Applikation. Das Ziel ist es, durch Klicken des richtigen Buttons möglichst viele Punkte sammeln.
 Es wird eine Aufgabe angezeigt und der Spieler muss innerhalb einer im Vorhinein selbst ausgewählten Zeitspanne auf den Button mit dem Symbol ":thumbsup:" anklicken, wenn die Aufgabe korrekt ist und ":thumbsdown:", falls es sich dabei um eine falsche Antwort handelt.
